@@ -12,7 +12,7 @@ function loadAndDisplayUsers() {
     // Clear any existing content in the userListElement
     userListElement.innerHTML = "Loading...";
     // Retrieve the userList from Local Storage
-    fetch('http://localhost:8080/api/v1/users')
+    fetch('https://localhost:8080/api/v1/users')
         .then((response) => {
             return response.json();
         })
